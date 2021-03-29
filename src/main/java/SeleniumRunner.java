@@ -29,7 +29,7 @@ public class SeleniumRunner {
 	    else
 	    	System.out.print("Element_not_Found");
 	System.out.println("\nSUCCESS");
-	System.exit(1);
+	System.exit(0);
 	}
 
 }
