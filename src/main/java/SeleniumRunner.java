@@ -28,7 +28,7 @@ public class SeleniumRunner {
 	    	System.out.print("Element_Found");
 	    else
 	    	System.out.print("Element_not_Found");
-
+	System.exit(0);
 	}
 
 }
