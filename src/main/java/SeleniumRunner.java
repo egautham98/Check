@@ -10,9 +10,8 @@ public class SeleniumRunner {
 
 	public static void main(String [] args) {
 		// TODO Auto-generated method stub
-		ChromeOptions options = new ChromeOptions();
-options.addArguments("--headless");
-WebDriver driver = new ChromeDriver(options);
+		
+WebDriver driver = new ChromeDriver();
 
 		 System.setProperty("webdriver.chrome.driver","src\\main\\resources\\chromedriver.exe");
 	    
