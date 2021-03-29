@@ -10,10 +10,10 @@ public class SeleniumRunner {
 
 	public static void main(String [] args) {
 		// TODO Auto-generated method stub
-		
+		 System.setProperty("webdriver.chrome.driver","src\\main\\resources\\chromedriver.exe");
 WebDriver driver = new ChromeDriver();
 
-		 System.setProperty("webdriver.chrome.driver","src\\main\\resources\\chromedriver.exe");
+		
 	    
 	     
 	    // Enter url.
