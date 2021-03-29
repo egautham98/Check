@@ -8,10 +8,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SeleniumRunner {
 
-	public String Runner() {
+	public static void main(String [] args) {
 		// TODO Auto-generated method stub
 
-		 System.setProperty("webdriver.chrome.driver","C:\\Users\\egaut\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver","src\\main\\resources\\chromedriver.exe");
 	    WebDriver driver = new ChromeDriver();
 	     
 	    // Enter url.
@@ -22,9 +22,9 @@ public class SeleniumRunner {
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    WebElement ee=driver.findElement(By.xpath("//*[@id=\"session_key\"]"));
 	    if(ee.isDisplayed())
-	    	return("Element_Found");
+	    	System.out.print("Element_Found");
 	    else
-	    	return("Element_not_Found");
+	    	System.out.print("Element_not_Found");
 
 	}
 
